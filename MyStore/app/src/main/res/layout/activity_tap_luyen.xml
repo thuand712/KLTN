@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Adapter.TapLuyenActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mauhong"
+        app:titleTextColor="@color/mautrang"
+        ></androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imgHinh"
+        android:layout_width="350dp"
+        android:layout_height="306dp"
+        android:layout_gravity="center"
+        android:src="@drawable/dt1"/>
+
+    <TextView
+        android:id="@+id/txtLapLai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/mauhong"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnBatDau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border_button"
+        android:text="Bắt đầu"
+        android:textColor="@color/mautrang"
+        android:layout_margin="30dp"/>
+
+</LinearLayout>

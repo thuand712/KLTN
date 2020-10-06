@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/itGioHang"
+        android:title="Giỏ hàng"
+        android:icon="@drawable/ic_cart_white_24dp"
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_item_giohang" />
+
+</menu>

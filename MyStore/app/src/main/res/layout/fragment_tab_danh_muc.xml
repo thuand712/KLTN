@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mautrang"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mauhong"
+        android:paddingRight="10dp"
+        app:titleTextColor="@color/mautrang">
+
+        <TextView
+            android:id="@+id/txtTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_search_gray_24dp"
+            android:background="@drawable/custom_search_trangchu"
+            android:paddingLeft="20dp"
+            android:drawablePadding="10dp"
+            android:layout_marginRight="10dp"
+            android:lines="1"
+            android:textSize="17sp"
+            android:gravity="center|left"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:ellipsize="end"
+            android:hint="Bạn muốn mua sản phẩm gì ?"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDanhMuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

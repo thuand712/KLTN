@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#FF5722</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="mautrang">#ffffff</color>
+    <color name="mauden">#000000</color>
+    <color name="mauhong">#FF5722</color>
+    <color name="bluenhat">#3578E5</color>
+    <color name="maudo">#FF0000</color>
+    <color name="mauxam">#A0A098</color>
+    <color name="maunen">#37CCCCCC</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="colorFacebook">#4a6ea9</color>
+    <color name="bgToolbar">#183545</color>
+    <color name="colorGreen">#38f734</color>
+    <color name="colorTiki">#1BA9FF</color>
+
+    <color name="mau60000000">#60000000</color>
+    <color name="mau30000000">#20000000</color>
+
+
+
+</resources>

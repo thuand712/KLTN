@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ShopActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#789"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:fitsSystemWindows="true"
+                    android:background="@drawable/image_bg_shop"
+                    app:layout_collapseMode="parallax">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="#90000000"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgHinhShop"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="25dp"
+                        android:src="@drawable/logo"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@id/imgHinhShop"
+                        android:layout_centerVertical="true">
+                        <TextView
+                            android:id="@+id/txtTenShop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TrangShop15"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/mautrang"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtSoDanhGia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.0"
+                                android:textColor="@color/mautrang"
+                                android:textStyle="bold" />
+                            <RatingBar
+                                android:id="@+id/ratingBar"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:theme="@style/DoiMauNgoiSao"
+                                android:rating="4"/>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/mautrang"/>
+                            <TextView
+                                android:id="@+id/txtLuotDanhGia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/mautrang"
+                                android:text="40 người yêu thích"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="5dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    app:layout_collapseMode="pin"
+                    android:layout_height="50dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgBack"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_back_white_24dp"/>
+                        <TextView
+                            android:id="@+id/txtSearch"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/imgBack"
+                            android:layout_marginLeft="10dp"
+                            android:drawablePadding="5dp"
+                            android:padding="3dp"
+                            android:layout_marginRight="10dp"
+                            android:textStyle="bold"
+                            android:text="Search in the Shop"
+                            android:gravity="center|left"
+                            android:textColor="@color/mautrang"
+                            android:drawableLeft="@drawable/ic_search_white_24dp"
+                            android:background="@drawable/custom_timkiem_shop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/mautrang">
+                <Spinner
+                    android:id="@+id/spinerSapXep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?actionBarSize"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="right|center">
+                    <TextView
+                        android:id="@+id/txtLocSanPham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_filter_black_24dp"
+                        android:text="Lọc"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/mauden"
+                        android:textAllCaps="false"
+                        android:background="@color/mautrang"
+                        android:layout_margin="10dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/mauxam"
+                        android:layout_height="20dp"/>
+                    <ImageButton
+                        android:id="@+id/imgLoaiLayoutHienThi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/mautrang"
+                        android:src="@drawable/ic_linear_black_24dp"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSanPham"
+                android:layout_weight="1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

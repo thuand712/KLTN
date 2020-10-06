@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/mautrang"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/txtTenShop"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_shop_black_24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="Được giao bởi shop Đức thuận"
+        android:textColor="@color/mauden" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/txtTinNhan"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_ghichu_print_24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="Ghi chú cho shop"
+        android:textColor="@color/mauden" />
+
+    <EditText
+        android:id="@+id/edTinNhanChoShop"
+        android:layout_width="match_parent"
+        android:textSize="13sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtTinNhan"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_border"
+        android:hint="Bạn muốn nhắn gì tới shop không?"
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/mauxam"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTextTongTienShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mauden"
+            android:text="Tổng số tiền (1 sản phẩm):"/>
+        <TextView
+            android:id="@+id/txtTongTienShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mauhong"
+            android:layout_alignParentRight="true"
+            android:text="162.000đ"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</LinearLayout>

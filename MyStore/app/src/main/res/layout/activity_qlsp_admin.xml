@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AdminQLSPActivity">
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mauhong">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <EditText
+            android:id="@+id/edSearch"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="6dp"
+            android:drawableLeft="@drawable/ic_search_gray_24dp"
+            android:background="@drawable/custom_search_trangchu"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/imgBack"
+            android:drawablePadding="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:maxLines="1"
+            android:gravity="center|left"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên sản phẩm?"/>
+
+    </RelativeLayout>-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mauhong"
+        app:titleTextColor="@color/mautrang"
+        app:title="Sản phẩm chờ xác nhận"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/empty_order_200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Không tìm thấy sản phẩm"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSP"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

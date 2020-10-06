@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maunen"
+    tools:context=".Activity.DiaChiActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:titleTextColor="@color/mautrang"
+        app:title="Địa chỉ nhận hàng"
+        android:background="@color/mauhong"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDiaChi"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnXacNhan"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnXacNhan"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        app:fabSize="normal"
+        android:backgroundTint="@color/mautrang"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_add_print_24dp"
+        app:elevation="5dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnXacNhan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mauhong"
+        android:text="Xác nhận"
+        android:textColor="@color/mautrang"/>
+
+</RelativeLayout>

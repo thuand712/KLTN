@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mautrang"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeChuDeTheLoai"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtFLA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FLA"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/mauhong"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgFLS"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:paddingLeft="-25dp"
+            android:paddingRight="-25dp"
+            android:tint="#FFC107"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtFLA"
+            android:src="@drawable/ic_flashsale"
+            android:layout_alignBottom="@id/txtFLA"/>
+        <TextView
+            android:id="@+id/txtHSALE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H DEAL"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/imgFLS"
+            android:textColor="@color/mauhong"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtTimeGio"
+            android:layout_toRightOf="@id/txtHSALE"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="18"
+            android:paddingLeft="3dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:paddingRight="3dp"
+            android:textColor="@color/mautrang"
+            android:background="@drawable/custom_text_view_flashsale"/>
+        <TextView
+            android:id="@+id/txtTimePhut"
+            android:layout_toRightOf="@id/txtTimeGio"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/mautrang"
+            android:background="@drawable/custom_text_view_flashsale"/>
+        <TextView
+            android:id="@+id/txtTimeGiay"
+            android:layout_toRightOf="@id/txtTimePhut"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="59"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/mautrang"
+            android:background="@drawable/custom_text_view_flashsale"/>
+        <TextView
+            android:id="@+id/txtXemThemFlashSale"
+            android:layout_alignParentRight="true"
+            android:text="Xem tất cả"
+            android:textColor="@color/mauden"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_next_black_24dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFlashSale"
+        android:scrollbars="none"
+        android:layout_below="@id/relativeChuDeTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

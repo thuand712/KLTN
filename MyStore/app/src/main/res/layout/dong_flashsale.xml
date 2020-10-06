@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/frameLayoutTheLoaiTheoChuDe"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/imgHinhSPFS"
+                android:scaleType="centerCrop"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                />
+            <TextView
+                android:id="@+id/txtPhanTramGiamGia"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="-49%"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/mautrang"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/custom_textview_giamgia"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txtGiaSPFS"
+            android:lines="1"
+            android:text="325.000đ"
+            android:maxWidth="150dp"
+            android:textSize="17sp"
+            android:textColor="@color/mauhong"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:id="@+id/progressBarFlashSale"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/custom_progressbar_flashsale"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/txtSoLuongSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="11sp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxWidth="150dp"
+                android:text="ĐÃ BÁN 25"
+                android:textColor="@color/mautrang"
+                />
+            <ImageView
+                android:id="@+id/imgFireFlashSale"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_fire_24dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

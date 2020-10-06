@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <CheckBox
+        android:id="@+id/chkSP"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/imgHinhSP"
+        android:layout_toRightOf="@id/chkSP"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:id="@+id/txtTenSP"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:text="Bỉm em bé mát dịu cả ngày giúp thoải mái và không rò rỉ, đặc biệt êm ái"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_toRightOf="@id/imgHinhSP"
+        android:textColor="@color/mauden"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/txtPhanLoaiSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgHinhSP"
+        android:layout_below="@id/txtTenSP"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="5dp"
+        android:textSize="12sp"
+        android:lines="1"
+        android:drawableRight="@drawable/ic_change_gray_24dp"
+        android:ellipsize="end"
+        android:text="Phân loại: Xanh coban, M"/>
+
+
+
+    <TextView
+        android:id="@+id/txtGiaSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/mauhong"
+        android:layout_toRightOf="@id/imgHinhSP"
+        android:layout_below="@id/txtPhanLoaiSP"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:text="300.000đ"/>
+    <TextView
+        android:id="@+id/txtGiaSPChuaKM"
+        android:layout_toRightOf="@id/imgHinhSP"
+        android:layout_marginLeft="10sp"
+        android:textSize="12sp"
+        android:layout_below="@id/txtGiaSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="420.000đ"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgHinhSP"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/txtGiaSPChuaKM"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_border_tang_giamsl"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="1dp">
+
+        <ImageButton
+            android:id="@+id/btnGiam"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/mautrang"
+            android:src="@drawable/ic_tru_xam_24dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/mauxam" />
+
+        <TextView
+            android:id="@+id/txtSoLuong"
+            android:layout_width="40dp"
+            android:layout_height="18sp"
+            android:gravity="center"
+            android:text="1"
+            android:background="@color/transparent"
+            android:textColor="@color/mauden"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/mauxam" />
+
+        <ImageButton
+            android:id="@+id/btnTang"
+            android:layout_margin="5dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/mautrang"
+            android:src="@drawable/ic_cong_den_24dp"
+            android:text="" />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgDeleteSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/txtGiaSPChuaKM"
+        android:src="@drawable/ic_delete_black_24dp"/>
+
+
+
+</RelativeLayout>

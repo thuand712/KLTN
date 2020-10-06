@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Shopify</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+
+    <string name="giaspchuakm"> Not crossed <strike> crossed </strike> </string>
+
+    <string name="facebook_app_id">545586109669549</string>
+    <string name="fb_login_protocol_scheme">fb545586109669549</string>
+
+
+    <string name="debietthemchitietdonhang">Để biết thêm chi tiết về trạng thái đơn hàng của bạn
+        vui lòng click vào <b>Chi tiết đơn hàng</b> ở phía dưới hoặc vào <b>Tài khoản > Đơn mua</b></string>
+
+    <string name="endash">&#8211;</string>
+    <string name="luuydonhang"><b>Lưu ý</b>: Đơn hàng sẽ tự động hủy sau 07 ngày nếu bạn không chuyển khoản.</string>
+    <string name="xacnhanchuyenkhoan">Sau khi chuyển khoản, bạn vui lòng <b><u>xác nhận chuyển khoản</u></b> nhé.</string>
+    <string name="titlexacnhanchuyenkhoan">Xác nhận chuyển khoản</string>
+    <string name="xacnhanthanhtoannhusau">Xác nhận thanh toán như sau:</string>
+    <string name="madonhang">Mã đơn hàng</string>
+    <string name="ngaychuyenkhoan">Ngày chuyển khoản</string>
+    <string name="nganhangchuyenkhoan">Ngân hàng chuyển khoản</string>
+    <string name="nganhangnhan">Ngân hàng nhận</string>
+    <string name="nganhangacb">Ngân hàng ACB</string>
+    <string name="sotaikhoannganhangchuyen">Số tài khoản ngân hàng chuyển (nhập TM nếu nộp tiền mặt tại quầy)</string>
+    <string name="edsotaikhoannganhangchuyen">Số tài khoản ngân hàng chuyển</string>
+    <string name="sotaikhoannganhangnhan">Số tài khoản ngân hàng nhận</string>
+    <string name="sotienchuyen">Số tiền chuyển (VNĐ)</string>
+    <string name="ghichu">Ghi chú</string>
+    <string name="toidaghichuchuyenkhoan">Tối đa 1000 ký tự</string>
+    <string name="themanhchitiet">Thêm ảnh chi tiết</string>
+    <string name="xacnhanthanhtoan">Xác nhận thanh toán</string>
+    <string name="xacnhanthanhtoanthanhcong">Xác nhận thanh toán thành công</string>
+    <string name="thanhtoanthanhcong">Xác nhận thanh toán thành công</string>
+    <string name="vuilongchonanh">Vui lòng chọn ảnh</string>
+    <string name="donhangdachuyenkhoan">Đơn hàng đã chuyển khoản</string>
+    <string name="text2xacnhanck">Vui lòng điền vào mẫu bên dưới sau khi bạn đã thực hiện chuyển khoản. Các giao dịch chuyển khoản sẽ được xác nhận trong vòng 24h (nếu chuyển cùng hệ thống) đến 48h (nếu chuyển khác hệ thống). Cung cấp đầy đủ thông tin chuyển khoản sẽ cho phép MyStore xác nhận đơn hàng của bạn nhanh hơn!</string>
+
+
+</resources>

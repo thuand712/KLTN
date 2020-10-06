@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeChuDeTheLoai"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mautrang">
+        <TextView
+            android:id="@+id/txtTitleBannerBaiHat"
+            android:text="GỢI Ý HÔM NAY"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/mauhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<TextView
+            android:id="@+id/txtXemThemFlashSale"
+            android:layout_alignParentRight="true"
+            android:text="Xem tất cả"
+            android:textSize="16sp"
+            android:textColor="@color/mauxam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_xemtatca_right_black_24dp"/>-->
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSanPhamGoiY"
+        android:layout_below="@id/relativeChuDeTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/itTrangChu"
+        android:title="Trang chủ"
+        android:icon="@drawable/ic_home_inactive"
+        />
+
+    <item android:id="@+id/itDanhMuc"
+        android:title="Danh mục"
+        android:icon="@drawable/ic_categories_inactive"
+        />
+
+    <item android:id="@+id/itLamDep"
+        android:title="Dạo"
+        android:icon="@drawable/triver_shop_weit_dark"
+        />
+
+    <item android:id="@+id/itTimKiem"
+        android:title="Tin nhắn"
+        android:icon="@drawable/ic_message_tab_home"
+        android:iconTint="@color/mauden"
+        />
+
+    <item android:id="@+id/itTaiKhoan"
+        android:title="Cá nhân"
+        android:icon="@drawable/ic_profile_inactive"
+        />
+
+</menu>

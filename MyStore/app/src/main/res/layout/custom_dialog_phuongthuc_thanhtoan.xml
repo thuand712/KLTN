@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+        <RadioGroup
+            android:id="@+id/rgThanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rdThanhToanKhiNhanHang"
+                android:checked="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thanh toán khi nhận hàng"/>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/maunen"/>
+            <RadioButton
+                android:id="@+id/rdChuyenKhoan"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chuyển khoản"/>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/maunen"/>
+            <RadioButton
+                android:layout_marginTop="5dp"
+                android:id="@+id/rdMomo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ví Momo"/>
+
+
+        </RadioGroup>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btnDongYThanhToan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Đồng ý"
+        android:textColor="@color/mautrang"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_border_button"/>
+
+</LinearLayout>

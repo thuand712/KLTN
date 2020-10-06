@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="@color/mautrang">
+
+    <RelativeLayout
+        android:id="@+id/relativeChuDeTheLoai"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTitleBannerBaiHat"
+            android:text="TOP SẢN PHẨM YÊU THÍCH"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/mauhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtSanPhamYeuThich"
+            android:layout_alignParentRight="true"
+            android:text="Xem thêm"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/mauden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_next_black_24dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSanPhamYeuThich"
+        android:scrollbars="none"
+        android:layout_below="@id/relativeChuDeTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

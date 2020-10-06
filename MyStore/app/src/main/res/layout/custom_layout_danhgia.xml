@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhận xét về sản phẩm này"
+        android:textSize="20sp"
+        android:textColor="@color/mauden"/>
+
+    <RatingBar
+        android:layout_gravity="center"
+        android:id="@+id/ratingBarDG"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="5"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtTieuDeDG"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tiêu đề đánh giá"
+            android:inputType="text"
+            android:textColor="@color/mauden"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtNoiDungDG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mauden"
+            android:hint="Nội dung đánh giá"
+            android:lines="3"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnDongYDG"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Đồng ý"
+            android:layout_margin="5dp"
+            android:textColor="@color/mautrang"
+            android:background="@drawable/custom_border_button"
+            />
+        <Button
+            android:id="@+id/btnHuyDG"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Hủy"
+            android:layout_margin="5dp"
+            android:textColor="@color/mautrang"
+            android:background="@drawable/custom_border_button_huy"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

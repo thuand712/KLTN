@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/llCVAlbumhot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp">
+            <ImageView
+                android:id="@+id/imgHinhSPTheoDM"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/txtPhanTramKMTheoDM"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="-49%"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/mautrang"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/custom_textview_giamgia"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTenSPTheoDM"
+            android:textSize="15sp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="Ngay xuan long phung sum vay vui qua la vui"
+            android:textColor="@color/mauden"
+            android:maxWidth="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"/>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtGiaSPTheoDM"
+                android:text="200.000đ"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/mauhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"/>
+            <TextView
+                android:id="@+id/txtGiaSPTheoDMChuaKM"
+                android:text="300.000đ"
+                android:textSize="12sp"
+                android:paddingLeft="5dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/mauxam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp">
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:max="5"
+                android:visibility="gone"
+                android:theme="@style/DoiMauNgoiSao"/>
+
+            <TextView
+                android:id="@+id/txtLuotMuaSPTheoDM"
+                android:text="Đã bán 500"
+                android:textSize="12sp"
+                android:paddingLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:maxWidth="90dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/mauden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

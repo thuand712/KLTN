@@ -1,0 +1,1 @@
+{"192.168.1.5":{"listItemViewed":{"5":1595175583,"7":1595176008},"listItemPredictRate":{"5":{"itemId":5,"viewCount":70,"timeView":106,"lastTimeStartRead":0},"7":{"itemId":7,"viewCount":1,"timeView":3,"lastTimeStartRead":0}}}}

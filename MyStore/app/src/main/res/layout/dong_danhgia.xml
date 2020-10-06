@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgHinhKhachHangDG"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/txtTenNhanVien"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mauden"
+            android:text="nguyenthitam"
+            android:textSize="10sp"/>
+        <RatingBar
+            android:id="@+id/ratingBarDG"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:ratingBarStyleSmall"
+            android:theme="@style/DoiMauNgoiSao"/>
+        <TextView
+            android:id="@+id/txtTieuDeDG"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sản phẩm A"
+            android:textSize="13sp"
+            android:textColor="@color/mauden"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/txtNoiDungDG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sản phẩm rất đẹp, hợp thời trang"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:maxLines="3" />
+        <TextView
+            android:id="@+id/txtNgayDG"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="08/04/2020" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

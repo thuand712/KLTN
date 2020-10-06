@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:background="@drawable/custom_tab_baiviet">
+
+    <ImageView android:id="@+id/icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_tab_skin"
+        android:layout_centerHorizontal="true"
+        android:tint="@color/custom_color_icon_tablayout"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:text="Trang điểm"
+        android:textSize="12sp"
+        android:textColor="@color/custom_color_icon_tablayout"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

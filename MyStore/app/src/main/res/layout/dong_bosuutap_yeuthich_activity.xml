@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/imgHinhSPTK"
+            android:layout_width="130dp"
+            android:layout_centerInParent="true"
+            android:layout_height="130dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTenSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/relativeLayout"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginTop="10dp"
+        android:text="Quần jean nữ da cá trẻ trung năng động, phối máu cực chất"
+        android:textColor="@color/mauden"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtLuotMua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/relativeLayout"
+        android:layout_below="@id/txtTenSanPham"
+        android:layout_marginTop="25dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Đã bán: 15"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/custom_border_vientron_bg_hong"
+        android:textColor="@color/mautrang"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txtGiaSP"
+        android:layout_toRightOf="@id/relativeLayout"
+        android:layout_below="@id/txtLuotMua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/mauhong"
+        android:layout_marginTop="20dp"
+        android:text="69.000đ"/>
+
+    <TextView
+        android:id="@+id/txtLuotThich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentRight="true"
+        android:text="Lượt thích 2"
+        android:layout_below="@id/txtLuotMua"/>
+
+</RelativeLayout>

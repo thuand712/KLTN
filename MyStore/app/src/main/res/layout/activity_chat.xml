@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChatActivity"
+    android:background="#efefef">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mauhong">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgShop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_account_circle_white_24dp"
+            android:layout_toRightOf="@id/imgBack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgOnline"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:civ_border_width="7dp"
+            app:civ_border_color="#05df29"
+            android:visibility="gone"
+            android:src="@drawable/ic_account_circle_print_24dp"
+            android:layout_alignBottom="@id/imgShop"
+            android:layout_toRightOf="@id/imgShop"
+            android:layout_marginLeft="-10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgOffline"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:civ_border_width="7dp"
+            app:civ_border_color="#bfbfbf"
+            android:visibility="gone"
+            android:src="@drawable/ic_account_circle_print_24dp"
+            android:layout_alignBottom="@id/imgShop"
+            android:layout_toRightOf="@id/imgShop"
+            android:layout_marginLeft="-10dp"/>
+
+        <TextView
+            android:id="@+id/txtShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imgShop"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/mautrang"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout"
+        android:layout_above="@id/rvChatNhanh"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChatNhanh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/relativeLayout1"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="@color/mautrang">
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_send_print_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+        <EditText
+            android:id="@+id/edMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnSend"
+            android:hint="Nhập nội dung tin nhắn..."
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

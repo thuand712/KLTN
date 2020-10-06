@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itGioHang"
+        android:title="itGioHang"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_cart_white_24dp"
+        app:actionLayout="@layout/custom_item_giohang"/>
+    <item android:title="more"
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/itTrangChu"
+                android:title="Trở về trang chủ"
+                android:icon="@drawable/ic_home_black_24dp"/>
+            <item android:id="@+id/itToCaoSP"
+                android:title="Tố cáo sản phẩm này"
+                android:icon="@drawable/ic_report_black_24dp"/>
+            <item android:id="@+id/itTroGiup"
+                android:title="Cần trợ giúp"
+                android:icon="@drawable/ic_help_black_24dp"/>
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.DangNhapActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mautrang">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDangNhapDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:title="Đăng nhập/Đăng ký" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutDangNhapDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/mauhong"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/mauden"></com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerDangNhapDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

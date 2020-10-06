@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="cusstom" parent="com_facebook_loginview_default_style">
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="DoiMauNgoiSao" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlActivated">#FFEB3B</item>
+        <!--<item name="colorControlNormal">@color/mauxam</item>-->
+    </style>
+
+
+
+
+    <!--<style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        &lt;!&ndash;<item name="android:textSize">24sp</item>&ndash;&gt;
+        <item name="android:textColor">@color/mautrang</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/mautrang</item>
+    </style>-->
+
+    <!--<style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+    </style>-->
+
+</resources>
+
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ducthuan.com.lamdep">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.DatHangMoMoThanhCongActivity"></activity>
+        <activity android:name=".Activity.AdminChiTietNhanVienActivity" />
+        <activity android:name=".Activity.AdminQLNDActivity" />
+        <activity android:name=".Activity.AdminThemDanhMucActivity" />
+        <activity android:name=".Activity.AdminSuaDanhMucActivity" />
+        <activity android:name=".Activity.AdminQLDMActivity" />
+        <activity android:name=".Activity.AdminQLSPActivity" />
+        <activity android:name=".Activity.AdminQuanLyChuyenKhoanActivity" />
+        <activity android:name=".Activity.ChiTietChuyenKhoanActivity" />
+        <activity android:name=".Activity.XacNhanChuyenKhoanThanhCongActivity" />
+        <activity android:name=".Activity.XacNhanChuyenKhoanActivity" />
+        <activity android:name=".Activity.AdminActivity" />
+        <activity android:name=".Activity.AdminXacNhanSanPhamActivity" />
+        <activity android:name=".Activity.ChatActivity" />
+        <activity android:name=".Activity.ShowHinhSanPhamActivity" />
+        <activity android:name=".Adapter.TapLuyenActivity" />
+        <activity android:name=".Activity.LoaiTapLuyenActivity" />
+        <activity android:name=".Activity.BaiVietLamDepLuuTruActivity" />
+        <activity android:name=".Activity.BaiVietLamDepActivity" />
+        <activity android:name=".Activity.DanhSachBaiVietLamDepActivity" />
+        <activity android:name=".Activity.DoanhThuActivity" />
+        <activity android:name=".Activity.SuaSanPhamShopCuaToiActivity" />
+        <activity android:name=".Activity.DanhGiaCuaToiActivity" />
+        <activity android:name=".Activity.SanPhamYeuThichActivity" />
+        <activity android:name=".Activity.SanPhamDaXemActivity" />
+        <activity android:name=".Activity.BoSuuTapYeuThichActivity" />
+        <activity android:name=".Activity.TimKiemHangDauActivity" />
+        <activity android:name=".Activity.FlashSaleActivity" />
+        <activity android:name=".Activity.TimKiemTrangChuActivity" />
+        <activity android:name=".Activity.ShopActivity" />
+        <activity android:name=".Activity.ChiTietDonHangKhachHangActivity" />
+        <activity android:name=".Activity.ChiTietDonHangShopActivity" />
+        <activity android:name=".Activity.ChiTietDonHangAdminActivity" />
+        <activity android:name=".Activity.QuanLyDonHangShopActivity" />
+        <activity android:name=".Activity.QuanLyDonHangAdminActivity" />
+        <activity android:name=".Activity.ThemSanPhamShopCuaToiActivity" />
+        <activity android:name=".Activity.DanhSachSanPhamShopCuaToiActivity" />
+        <activity android:name=".Activity.ShopCuaToiActivity" />
+        <activity android:name=".Activity.DonMuaActivity" />
+        <activity android:name=".Activity.ThongTinTaiKhoanActivity" />
+        <activity android:name=".Activity.DatHangThanhCongActivity" />
+        <activity android:name=".Activity.DatHangThanhCongChuyenKhoanActivity" />
+        <activity android:name=".Activity.TestActivity"></activity>
+        <activity android:name=".Activity.DiaChiActivity" />
+        <activity android:name=".Activity.XacNhanThongTinMuaHangActivity" />
+        <activity android:name=".Activity.DiaChiNhanHangActivity" />
+        <activity android:name=".Activity.GioHangActivity" />
+        <activity android:name=".Activity.DanhGiaActivity" />
+        <activity android:name=".Activity.ChiTietSanPhamActivity" />
+        <activity android:name=".Activity.HienThiSanPhamTheoDanhMucActivity" />
+        <activity android:name=".Activity.DangNhapActivity" />
+        <activity android:name=".Activity.TrangChuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <receiver android:name=".ObjectClass.AlarmReceiver" />
+
+        <service
+            android:name=".Notifications.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notifications.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+</manifest>

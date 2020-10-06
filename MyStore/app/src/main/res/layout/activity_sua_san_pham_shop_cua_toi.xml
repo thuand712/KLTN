@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maunen"
+    android:orientation="vertical"
+    tools:context=".Activity.SuaSanPhamShopCuaToiActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mauhong"
+        android:paddingRight="10dp"
+        app:title="Sửa sản phẩm"
+        app:titleTextColor="@color/mautrang" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:id="@+id/imgAnhBia"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/image_bg_shop" />
+
+                        <View
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#80000000" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="Ảnh bìa"
+                            android:textColor="@color/mautrang" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnThemHinhAnh"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:visibility="gone"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/custom_button_them_hinhanh_sanpham"
+                        android:text="Thêm hình ảnh"
+                        android:textAllCaps="false"
+                        android:textColor="@color/mauhong" />
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvHinhNho"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtTenSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mautrang"
+                android:hint="Tên sản phẩm (tối đa 120 ký tự)"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txtMoTaSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:background="@color/mautrang"
+                android:hint="Mô tả sản phẩm (ít nhất 100 ký tự)"
+                android:padding="10dp"
+                android:lines="3"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mautrang">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_chondanhmuc_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Danh mục"
+                    android:textColor="@color/mauden" />
+
+                <TextView
+                    android:id="@+id/txtDanhMuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/ic_next_black_24dp"
+                    android:gravity="center"
+                    android:textColor="@color/mauden"
+                    android:padding="10dp"
+                    android:text="Chọn danh mục" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mautrang">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_money_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Giá"
+                    android:textColor="@color/mauden" />
+
+                <EditText
+                    android:id="@+id/txtGiaSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/mautrang"
+                    android:hint="Đặt giá"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mautrang">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_khohang_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Kho hàng"
+                    android:textColor="@color/mauden" />
+
+                <EditText
+                    android:id="@+id/txtSoLuongSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/mautrang"
+                    android:hint="Số lượng"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mautrang">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_color_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Màu sắc"
+                    android:textColor="@color/mauden" />
+
+                <EditText
+                    android:id="@+id/edMauSac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/mautrang"
+                    android:hint="Ví dụ: Xanh,Đỏ..."
+                    android:gravity="end"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mautrang">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_size_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Kích thước"
+                    android:textColor="@color/mauden" />
+
+                <EditText
+                    android:id="@+id/edKichThuoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/mautrang"
+                    android:hint="Ví dụ: S,M,L,200ml..."
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/mautrang">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_khuyenmai_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Khuyến mãi"
+                    android:textColor="@color/mauden" />
+
+                <EditText
+                    android:id="@+id/txtKhuyenMai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/mautrang"
+                    android:hint="%"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnXoa"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_border_button"
+                android:text="Xóa"
+                android:textColor="@color/mautrang"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

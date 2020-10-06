@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AdminChiTietNhanVienActivity"
+    android:background="@color/maunen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mauhong"
+        app:title="Chi tiết nhân viên"
+        app:titleTextColor="@color/mautrang"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:background="@color/mautrang"
+        android:layout_margin="10dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mauhong"
+                    android:text="Profile"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgNV"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_account_circle_print_24dp"/>
+
+                <TextView
+                    android:id="@+id/txtTenNV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="Nguyen Thi Tam"
+                    android:textColor="@color/mauhong"/>
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textColor="@color/mauden"/>
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/mauden"
+                    android:padding="7dp"
+                    android:text="tam@gmail.com"
+                    android:background="@drawable/custom_edittext_vienxam_nenxam"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại:"
+                    android:textColor="@color/mauden"/>
+                <TextView
+                    android:id="@+id/txtSDT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/mauden"
+                    android:padding="7dp"
+                    android:text="Chưa cập nhập"
+                    android:background="@drawable/custom_edittext_vienxam_nenxam"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày sinh:"
+                    android:textColor="@color/mauden"/>
+                <TextView
+                    android:id="@+id/txtNgaySinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/mauden"
+                    android:padding="7dp"
+                    android:text="Chưa cập nhập"
+                    android:background="@drawable/custom_edittext_vienxam_nenxam"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ:"
+                    android:textColor="@color/mauden"/>
+
+                <TextView
+                    android:id="@+id/txtDiaChi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custom_edittext_vienxam_nenxam"
+                    android:padding="7dp"
+                    android:text="Chưa cập nhập"
+                    android:textColor="@color/mauden" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới tính:"
+                    android:textColor="@color/mauden"/>
+                <TextView
+                    android:id="@+id/txtGioiTinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="7dp"
+                    android:text="Chưa cập nhập"
+                    android:textColor="@color/mauden"
+                    android:background="@drawable/custom_edittext_vienxam_nenxam"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày đăng ký:"
+                    android:textColor="@color/mauden"/>
+                <TextView
+                    android:id="@+id/txtNgayDangKy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/mauden"
+                    android:padding="7dp"
+                    android:text="22/07/2020"
+                    android:background="@drawable/custom_edittext_vienxam_nenxam"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loại nhân viên:"
+                    android:textColor="@color/mauden"/>
+                <TextView
+                    android:id="@+id/txtLoaiNV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/mauden"
+                    android:padding="7dp"
+                    android:text="Khách hàng"
+                    android:background="@drawable/custom_edittext_vienxam_nenxam"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trạng thái:"
+                    android:textColor="@color/mauden"/>
+                <TextView
+                    android:id="@+id/txtTrangThai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/mauden"
+                    android:padding="7dp"
+                    android:text="Đang hoạt động"
+                    android:background="@drawable/custom_edittext_vienxam_nenxam"
+                    android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

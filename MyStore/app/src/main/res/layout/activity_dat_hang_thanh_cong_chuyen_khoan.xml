@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maunen"
+    android:orientation="vertical"
+    tools:context=".Activity.DatHangThanhCongActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mauhong"
+        app:title="Đặt hàng thành công"
+        app:titleTextColor="@color/mautrang" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mautrang"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/image_dat_hang_thanh_cong_240dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Đặt hàng thành công"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+
+                    <TextView
+                        android:id="@+id/txtShowMaTienDH"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bạn đã đặt thành công đơn hàng mã 56, trị giá 245.000đ, thanh toán chuyển khoản"
+                        android:textColor="@color/mauden" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/luuydonhang"
+                        android:textColor="@color/maudo"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vui lòng thực hiện chuyển khoản với thông tin sau:"
+                        android:textColor="@color/mauden" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:padding="10dp"
+                        android:background="@drawable/custom_bg_thongtin_chuyenkhoan">
+
+                        <LinearLayout
+                            android:id="@+id/lnNganHang"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:id="@+id/imgHinhNganHang"
+                                android:layout_width="80dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/image_nganhang_acb"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tên TK:"
+                                android:textColor="@color/mauden"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/imgHinhNganHang"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Số TK:"
+                                android:textColor="@color/mauden"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/imgHinhNganHang"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Nội dung CK:"
+                                android:textColor="@color/mauden"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/imgHinhNganHang"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Số tiền:"
+                                android:textColor="@color/mauden"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/imgHinhNganHang"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center|left">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:text="ACB Ngân Hàng Á Châu"
+                                android:gravity="center|left"
+                                android:textColor="@color/mauden"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/imgHinhNganHang"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Công ty TNHH XXX"
+                                android:textColor="@color/mauden"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/imgHinhNganHang"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0181003531707"
+                                android:textColor="@color/mauden"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/imgHinhNganHang"/>
+                            <TextView
+                                android:id="@+id/txtMaDH"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Thanh toán đơn hàng 56"
+                                android:textColor="@color/mauden"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/imgHinhNganHang"/>
+
+                            <TextView
+                                android:id="@+id/txtTongTien"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="245.000đ"
+                                android:textColor="@color/mauden"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/imgHinhNganHang"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/txtXacNhanCK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xacnhanchuyenkhoan"
+                    android:textColor="@color/mauden" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/debietthemchitietdonhang"
+                    android:textColor="@color/mauden" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="MyStore rất hân hạnh được phục vụ bạn! "
+                    android:textColor="@color/mauden" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnTiepTucMuaSam"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_vientron_mauhong"
+                        android:text="Tiếp tục mua sắm"
+                        android:textAllCaps="false"
+                        android:textColor="@color/mauhong" />
+
+                    <Button
+                        android:id="@+id/btnChiTietDonHang"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_vientron_maufb"
+                        android:text="Chi tiết đơn hàng"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorFacebook" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

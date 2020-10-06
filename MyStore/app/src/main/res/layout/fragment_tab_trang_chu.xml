@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarLayoutTrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarTrangChu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingRight="10dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/mautrang">
+
+            <TextView
+                android:id="@+id/txtTimKiem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_search_trangchu"
+                android:drawableLeft="@drawable/ic_search_gray_24dp"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:hint="Tìm kiếm sản phẩm"
+                android:paddingLeft="20dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textSize="17sp" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPagerQuangCao"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp">
+                    </androidx.viewpager.widget.ViewPager>
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicatorQuangCao"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="13dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <fragment
+                android:id="@+id/fragmentDanhMuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="ducthuan.com.lamdep.Fragment.Fragment_LoaiSanPham"/>
+
+            <fragment
+                android:id="@+id/fragmentFlashSale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="ducthuan.com.lamdep.Fragment.Fragment_FlashSale"/>
+
+            <fragment
+                android:id="@+id/fragmentTimKiem"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="ducthuan.com.lamdep.Fragment.Fragment_TimKiem"/>
+
+            <fragment
+                android:id="@+id/fragmentSanPhamYeuThich"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="ducthuan.com.lamdep.Fragment.Fragment_SanPhamYeuThich"/>
+
+            <fragment
+                android:id="@+id/fragmentSanPhamGoiY"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="ducthuan.com.lamdep.Fragment.Fragment_SanPhamGoiY"/>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

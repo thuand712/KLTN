@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/mautrang">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtTenShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_myshop_24dp"
+            android:drawablePadding="10dp"
+            android:gravity="center|left"
+            android:textColor="@color/mauden"
+            android:text="Đức Thuận"/>
+
+        <TextView
+            android:id="@+id/txtTrangThai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mauhong"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="Chờ xác nhận"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/imgHinhSP"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/txtTenSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Áo sơ mi nam cao cấp - Phong cách thời trang trẻ trung năng động"
+            android:layout_toRightOf="@id/imgHinhSP"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mauden"/>
+
+        <TextView
+            android:id="@+id/txtPhanLoaiSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đen, XL"
+            android:layout_toRightOf="@id/imgHinhSP"
+            android:layout_below="@id/txtTenSP"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã đơn hàng"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/txtMaDonHang"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:text="1254"/>
+    </RelativeLayout>
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/mauxam"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtSoLuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="2 sản phẩm"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/txtTongTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="297.000đ"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/mauhong"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng thanh toán: "
+            android:layout_centerVertical="true"
+            android:textColor="@color/mauden"
+            android:gravity="center|left"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_doanhthu_orange_24dp"
+            android:layout_toLeftOf="@id/txtTongTien"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/mauxam"/>
+
+
+
+
+</LinearLayout>

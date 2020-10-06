@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <RadioButton
+            android:id="@+id/rdSelected"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:id="@+id/lnDiaChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/rdSelected"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/txtTenNV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mauden"
+                android:text="Đức Thuận"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="13dp"
+                android:background="@color/mauden"/>
+
+            <TextView
+                android:id="@+id/txtSdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mauden"
+                android:text="0973352845"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtDiaChi"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/lnDiaChi"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mauden"
+            android:text="Ký túc xá khu A Đại học quốc gia TPHCM, Quận thủ đức TPHCM"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:maxWidth="300dp"
+            android:layout_toRightOf="@id/rdSelected"
+            />
+
+        <ImageView
+            android:id="@+id/imgMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/txtDiaChiMacDinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐỊA CHỈ MẶC ĐỊNH"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mauhong"
+            android:layout_toRightOf="@id/rdSelected"
+            android:layout_below="@id/txtDiaChi"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

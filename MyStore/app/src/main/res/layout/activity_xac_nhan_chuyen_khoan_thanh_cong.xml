@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.XacNhanChuyenKhoanThanhCongActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mauhong"
+        app:titleTextColor="@color/mautrang"
+        app:title="@string/xacnhanthanhtoanthanhcong"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/image_dat_hang_thanh_cong_240dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtMaDH"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mauden"
+            android:text="Xác nhận thanh toán đơn hàng mã 56 thành công."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/debietthemchitietdonhang"
+            android:textColor="@color/mauden" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="MyStore rất hân hạnh được phục vụ bạn! "
+            android:textColor="@color/mauden" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTiepTucMuaSam"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_vientron_mauhong"
+                android:text="Tiếp tục mua sắm"
+                android:textAllCaps="false"
+                android:textColor="@color/mauhong" />
+
+            <Button
+                android:id="@+id/btnChiTietDonHang"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_vientron_maufb"
+                android:text="Chi tiết đơn hàng"
+                android:textAllCaps="false"
+                android:textColor="@color/colorFacebook" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
